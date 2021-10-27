@@ -14,8 +14,7 @@ class BankAccount:
         if self.balance < amount:
             print("Insufficient funds: Charging a $5 fee")
             self.balance -= amount + 5
-        else:
-            self.balance -= amount
+        self.balance -= amount
         return self
 
     def display_account_info(self):
